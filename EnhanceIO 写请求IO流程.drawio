@@ -1,1 +1,216 @@
-<mxfile host="app.diagrams.net" modified="2022-05-16T12:38:59.073Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36 Edg/101.0.1210.47" version="18.0.5" etag="q7CQJJmh8C4nYhn-4MwS" type="github"><diagram id="8Vjxr3_7JWpRKdwwjp3P">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-05-16T13:41:17.227Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36 Edg/101.0.1210.47" etag="H30TQ6izqg6churh1T5-" version="18.0.5" type="github">
+  <diagram id="8Vjxr3_7JWpRKdwwjp3P" name="Page-1">
+    <mxGraphModel dx="700" dy="784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-1" target="WETynCM1N1g4Iuk6bGbD-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-1" value="写请求" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="120" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-2" target="WETynCM1N1g4Iuk6bGbD-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-2" value="Hash映射，获取相应的Set" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-4" target="WETynCM1N1g4Iuk6bGbD-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-4" value="默认按照4K大小切分BIO，并存放至链表中" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-6" target="WETynCM1N1g4Iuk6bGbD-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-6" target="WETynCM1N1g4Iuk6bGbD-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-6" value="遍历链表中的每个元素，检测是否完成" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-9" target="WETynCM1N1g4Iuk6bGbD-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="490" y="480" />
+              <mxPoint x="410" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-9" target="WETynCM1N1g4Iuk6bGbD-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-9" value="检查是否命中Cache" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-11" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="320" y="380" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-15" value="Y" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="450" y="460" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-16" target="WETynCM1N1g4Iuk6bGbD-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-16" target="WETynCM1N1g4Iuk6bGbD-24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="540" />
+              <mxPoint x="330" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-16" value="检查是否是脏写命中" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="500" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-18" target="WETynCM1N1g4Iuk6bGbD-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-18" value="标记更新元数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="620" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-20" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="420" y="585" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-21" target="WETynCM1N1g4Iuk6bGbD-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-21" value="查询空闲缓存块" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="520" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-23" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="520" y="460" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-24" target="WETynCM1N1g4Iuk6bGbD-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-24" target="WETynCM1N1g4Iuk6bGbD-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-24" value="检查IO是否小于4K" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="700" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-26" value="标记即写入HDD也写入SSD" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="820" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-28" value="Y" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="370" y="780" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-31" value="Y" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="630" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-32" value="标记写入SDD" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="820" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-34" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="780" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.45;entryY=-0.025;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-35" target="WETynCM1N1g4Iuk6bGbD-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-35" target="WETynCM1N1g4Iuk6bGbD-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-35" value="检查IO是否小于4K" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="600" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-39" value="标记写入HDD" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="720" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-41" value="标记写入SSD，并更新元数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="720" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-47" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="680" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-48" value="Y" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="550" y="680" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-49" target="WETynCM1N1g4Iuk6bGbD-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-49" target="WETynCM1N1g4Iuk6bGbD-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-49" value="检查是否全部命中缓存" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="900" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-51" value="Y" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="630" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-52" target="WETynCM1N1g4Iuk6bGbD-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-52" value="数据写入SSD，并根据标记为判断是否更新元数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1060" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-54" value="Y" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1020" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-55" value="写入IO完成" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1270" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-57" target="WETynCM1N1g4Iuk6bGbD-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-57" target="WETynCM1N1g4Iuk6bGbD-68">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="1010" />
+              <mxPoint x="414" y="1010" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-57" value="遍历链表中的每个元素，检测是否完成" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="900" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-59" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="320" y="920" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-60" target="WETynCM1N1g4Iuk6bGbD-57">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="1080" />
+              <mxPoint x="670" y="940" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-60" target="WETynCM1N1g4Iuk6bGbD-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-60" value="检查IO是否分配缓存块" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="1040" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-62" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="990" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-64" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="670" y="990" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-65" value="数据写入SSD，并根据标记为判断是否更新元数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="1169" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-67" value="Y" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="580" y="1140" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WETynCM1N1g4Iuk6bGbD-68" target="WETynCM1N1g4Iuk6bGbD-55">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="414" y="1170" />
+              <mxPoint x="220" y="1170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-68" value="数据写入HDD" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="1060" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WETynCM1N1g4Iuk6bGbD-70" value="Y" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="450" y="990" width="20" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
